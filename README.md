@@ -7,7 +7,13 @@ The genesis block is created when a client tries to add a block for the first ti
 
 ### Prerequisites
 
-Node and npm
+- Node
+- npm
+- crypto-js
+- levelDB
+- express
+
+
 
 ### Configuring your project
 
@@ -16,7 +22,31 @@ Node and npm
 npm i
 ```
 
-## Testing
+## Running Web API service
+
+1: Run node server locally on port 8000
+```
+node server.js
+``` 
+
+2: To add a block in the blockchain, use the endpoint 
+```
+POST /block
+```  
+
+with payload like
+
+```
+{"data" : "your message"}
+```
+
+3: To get a block at a given height, use the endpoint
+```
+GET /block/:height 
+```
+
+ 
+## Testing Blockchain data structure
 
 To test code:
 1: Open a command prompt or shell terminal after installing node.js.

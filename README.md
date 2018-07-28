@@ -1,9 +1,6 @@
 # NaiveChain.js
 
-NaiveChain.js is a naive implementation blockchain to demonstrate blockchain data model.
-
-## Note
-The genesis block is created when a client tries to add a block for the first time and not at initialisation of blockchain datastructure.
+NaiveChain.js is a naive implementation of blockchain without the consensus algorithm to demonstrate blockchain data model.
 
 ### Prerequisites
 
